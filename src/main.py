@@ -139,3 +139,11 @@ def get_solar_flares():
 
     print("All attempts failed.")
     return None
+
+while True:
+    print("------ Daily Space Briefing -----")
+    print("1. Today's Astronomy Picture")
+    print("2. Near-Earth Asteroids (Next 7 Days)")
+    print("3. Exit")
+
+    choice = input("Choose an option")

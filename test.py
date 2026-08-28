@@ -117,4 +117,3 @@ def show_asteroids(data):
 
 if asteroid_data:
     show_asteroids(asteroid_data)
-        
