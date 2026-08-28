@@ -115,4 +115,27 @@ def get_solar_flares():
     return data
 
 flare_data = get_solar_flares()
-print(flare_data)        
+print(flare_data)
+
+#& RETRY IF FAIL 503 SERVICE UNAVAILABLE
+import time
+
+def get_solar_flares():
+    url = "https://api.nasa.gov/DONKI/FLR"
+    params = {
+        "api_key": api_key,
+        "startDate": start_date,
+        "endDate": end_date
+    }
+
+    for attempt in range(3):
+        response = requests.get(url, params=params)
+
+        if response.status_code == 200:
+            return response.json()
+
+        print(f"Attempt {attempt + 1} failed with status {response.status_code}, retrying...")
+        time.sleep(2) # to give server 2 second break s it can reset properly
+
+    print("All attempts failed.")
+    return None
