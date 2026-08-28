@@ -1,3 +1,5 @@
+#! for solor space weather (currently unavailable 505) nasa mistake
+
 import requests
 import time
 

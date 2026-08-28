@@ -1,3 +1,5 @@
 *.env
 *.txt
 *__pycache__
+*tempCodeRunnerFile.py
+*space_log.txt

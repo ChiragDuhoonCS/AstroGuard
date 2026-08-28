@@ -1,7 +1,9 @@
+#! for earth image (currently error 404)
+
 import requests
 
 def get_epic_images(api_key):
-    url = "https://api.nasa.gov/EPIC/api/natural/images"
+    url = "https://api.nasa.gov/EPIC/api/natural"
     params = {"api_key": api_key}
     response = requests.get(url, params=params)
 
@@ -18,14 +20,17 @@ def show_epic_images(data):
         return
 
     for item in data:
-        #& means break stuff into three  "2026-08-28 01:08:12"  this in api 
-        date_part = item["date"].split(" ")[0] 
+    #& means break stuff into three  "2026-08-28 01:08:12"  this in api 
+       date_part = item["date"].split(" ")[0]
         #& we will take only date
-        year, month, day = date_part.split("-") # put - in between
-        image_name = item["image"]
+       year, month, day = date_part.split("-")
+       image_name = item["image"]
+   
+      # print("DEBUG date_part:", date_part)
+      # print("DEBUG year/month/day:", year, month, day)
+      # print("DEBUG image_name:", image_name)
 
-        image_url = f"https://epic.gsfc.nasa.gov/archive/natural/{year}/{month}/{day}/png/{image_name}.png"
+       image_url = f"https://epic.gsfc.nasa.gov/archive/natural/{year}/{month}/{day}/png/{image_name}.png"
+       print("DEBUG full URL:", image_url)
 
-        print(f"\nDate: {item['date']}")
-        print(f"Caption: {item['caption']}")
-        print(f"Image URL: {image_url}")
+    

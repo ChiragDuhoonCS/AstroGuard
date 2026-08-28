@@ -71,3 +71,69 @@ URL: https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg
 [APOD] 2026-08-28
 Title: The Sky Turns Above Paranal
 URL: https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg
+
+[EPIC] 2026-08-26 00:13:03
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826001752.png
+
+[EPIC] 2026-08-26 01:18:30
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826012319.png
+
+[EPIC] 2026-08-26 02:23:57
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826022846.png
+
+[EPIC] 2026-08-26 03:29:25
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826033413.png
+
+[EPIC] 2026-08-26 04:34:52
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826043940.png
+
+[EPIC] 2026-08-26 05:40:19
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826054507.png
+
+[EPIC] 2026-08-26 06:45:46
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826065035.png
+
+[EPIC] 2026-08-26 07:51:13
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826075602.png
+
+[EPIC] 2026-08-26 08:56:41
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826090129.png
+
+[EPIC] 2026-08-26 10:02:08
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826100657.png
+
+[EPIC] 2026-08-26 11:07:35
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826111224.png
+
+[EPIC] 2026-08-26 12:13:03
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826121751.png
+
+[EPIC] 2026-08-26 13:18:30
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826132318.png
+
+[EPIC] 2026-08-26 14:23:57
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826142845.png
+
+[EPIC] 2026-08-26 15:29:24
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826153413.png
+
+[EPIC] 2026-08-26 16:34:51
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826163939.png
+
+[EPIC] 2026-08-26 17:40:18
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826174507.png
+
+[EPIC] 2026-08-26 18:45:45
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826185034.png
+
+[EPIC] 2026-08-26 19:51:12
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826195601.png
+
+[EPIC] 2026-08-26 20:56:39
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826210128.png
+
+[EPIC] 2026-08-26 22:02:06
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826220655.png
+
+[EPIC] 2026-08-26 23:07:33
+Image URL: https://epic.gsfc.nasa.gov/archive/natural/2026/08/26/png/epic_1b_20260826231222.png
