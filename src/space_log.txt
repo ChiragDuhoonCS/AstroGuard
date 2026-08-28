@@ -6,3 +6,64 @@ URL: https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg
 [APOD] 2026-08-28
 Title: The Sky Turns Above Paranal
 URL: https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg
+
+[ASTEROIDS] 2026-08-28
+  221455 (2006 BC10) - Hazardous: True
+  (2016 PP39) - Hazardous: False
+  (2017 BP31) - Hazardous: True
+  (2017 DR37) - Hazardous: False
+  (2019 NC1) - Hazardous: False
+
+[ASTEROIDS] 2026-08-29
+  (2020 DX1) - Hazardous: False
+
+[ASTEROIDS] 2026-08-30
+  485823 (2012 DF61) - Hazardous: False
+  (2007 EK) - Hazardous: False
+  (2012 LE11) - Hazardous: False
+  (2012 TB53) - Hazardous: False
+  (2013 JR28) - Hazardous: True
+  (2019 GK5) - Hazardous: False
+
+[ASTEROIDS] 2026-08-31
+  (2002 RT) - Hazardous: False
+  (2007 PB8) - Hazardous: False
+  (2007 SG11) - Hazardous: False
+  (2008 CD70) - Hazardous: False
+  (2008 HU4) - Hazardous: False
+  (2010 QN1) - Hazardous: False
+  (2011 EX4) - Hazardous: False
+  (2016 RP40) - Hazardous: False
+  (2017 FR) - Hazardous: False
+  (2017 UY4) - Hazardous: False
+  (2017 RH16) - Hazardous: False
+
+[ASTEROIDS] 2026-09-02
+  (2014 SU1) - Hazardous: False
+  (2017 FF101) - Hazardous: False
+  (2019 HE) - Hazardous: False
+
+[ASTEROIDS] 2026-09-01
+  (2000 RE52) - Hazardous: False
+  (2001 SL264) - Hazardous: False
+  (2007 SV1) - Hazardous: False
+  (2011 CT4) - Hazardous: True
+  (2014 KO62) - Hazardous: False
+  (2016 YP4) - Hazardous: False
+  (2018 DM) - Hazardous: False
+  (2018 RD2) - Hazardous: False
+  (2019 LL6) - Hazardous: False
+
+[ASTEROIDS] 2026-09-04
+  (2016 HF2) - Hazardous: False
+  (2018 XF2) - Hazardous: False
+  (2019 PM) - Hazardous: False
+
+[ASTEROIDS] 2026-09-03
+  337075 (1998 QC1) - Hazardous: True
+  (2013 QF11) - Hazardous: False
+  (2014 SF304) - Hazardous: False
+  (2014 YT34) - Hazardous: False
+  (2015 DM215) - Hazardous: False
+  (2017 QB35) - Hazardous: False
+  (2019 LL5) - Hazardous: False

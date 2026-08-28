@@ -81,7 +81,7 @@ def show_asteroids(data):
     neo_data = data["near_earth_objects"]
 
     for day in neo_data:
-        print(f"\nDate: {day}")
+        print(f"\n----> Date: {day}")
         asteroids = neo_data[day]
 
         for asteroid in asteroids:
@@ -146,6 +146,7 @@ def log_asteroids(data):
 
 #!  main menu
 while True:
+    print("LOOP STARTED")
     print("------ Daily Space Briefing -----")
     print("1. Today's Astronomy Picture")
     print("2. Near-Earth Asteroids (Next 7 Days)")
