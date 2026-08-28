@@ -29,3 +29,59 @@ image_url = data["url"]
 print("Title:", title)
 print("Explanation:", explanation)
 print("Image URL:", image_url)
+
+#& now lets convert them into functions
+
+
+#! APOD   DAILY PIC
+def get_apod():
+    url = "https://api.nasa.gov/planetary/apod"
+    params = {"api_key": api_key}
+    response = requests.get(url, params=params)
+    
+    if response.status_code != 200:
+        print("Something went wrong:", response.status_code)
+        return None
+    
+    data = response.json()
+    return data
+
+def show_apod(data):
+    print("Title:", data["title"])
+    print("Date:", data["date"])
+    print("Explanation:", data["explanation"])
+    print("Image URL:", data["url"])
+
+apod_data = get_apod()
+if apod_data:
+    show_apod(apod_data)
+
+
+#! NeoWs  track asteriod   we need time   multiple asteroid on same day
+
+from datetime import date, timedelta
+
+today = date.today()
+week_later = today + timedelta(days=7)
+
+start_date = today.strftime("%Y-%m-%d") #@ %a day nasa api wouldnot accept
+end_date = week_later.strftime("%Y-%m-%d")
+
+def get_asteroids():
+    url = "https://api.nasa.gov/neo/rest/v1/feed"
+    params = {
+        "api_key": api_key,
+        "start_date": start_date,
+        "end_date": end_date
+    }
+    response = requests.get(url, params=params)
+
+    if response.status_code != 200:
+        print("Something went wrong:", response.status_code)
+        return None
+
+    data = response.json()
+    return data
+
+asteroid_data = get_asteroids()
+print(asteroid_data)
