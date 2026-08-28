@@ -93,4 +93,26 @@ def show_asteroids(data):
 
 if asteroid_data:
     show_asteroids(asteroid_data)
-        
+
+
+#! SOLOR WEATHER
+
+#@ CHECK
+def get_solar_flares():
+    url = "https://api.nasa.gov/DONKI/FLR"
+    params = {
+        "api_key": api_key,
+        "startDate": start_date,
+        "endDate": end_date
+    }
+    response = requests.get(url, params=params)
+
+    if response.status_code != 200:
+        print("Something went wrong:", response.status_code)
+        return None
+
+    data = response.json()
+    return data
+
+flare_data = get_solar_flares()
+print(flare_data)        
