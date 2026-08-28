@@ -75,7 +75,6 @@ def get_asteroids():
 
 # data["near_earth_objects"] is itself a dictionary
 
-asteroid_data = get_asteroids()
 
 #&  Now nesting a second loop to get each asteroid on that day
 def show_asteroids(data):
@@ -133,6 +132,17 @@ def log_apod(data):
         file.write(f"Title: {data['title']}\n")
         file.write(f"URL: {data['url']}\n") 
 
+def log_asteroids(data):
+    neo_data = data["near_earth_objects"]
+    print("Logging asteroids...")
+    with open(get_log_path(), "a") as file:
+        for day in neo_data:
+            file.write(f"\n[ASTEROIDS] {day}\n")
+            for asteroid in neo_data[day]:
+                name = asteroid["name"]
+                hazardous = asteroid["is_potentially_hazardous_asteroid"]
+                file.write(f"  {name} - Hazardous: {hazardous}\n")      
+
 
 #!  main menu
 while True:
@@ -149,13 +159,11 @@ while True:
             show_apod(apod_data)
             log_apod(apod_data) 
 
-       
-
-
     elif choice == "2":
         asteroid_data = get_asteroids()
         if asteroid_data:
             show_asteroids(asteroid_data)
+            log_asteroids(asteroid_data)
     
     elif choice == "3":
         print("Goodbye!")
