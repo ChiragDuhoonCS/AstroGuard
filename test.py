@@ -4,12 +4,33 @@ import os
 
 load_dotenv()
 api_key = os.getenv("NASA_API_KEY")
-
+print(api_key)
 
 #@ to extract data from api 
 import requests
 
+url = "https://api.nasa.gov/planetary/apod"
+params = {"api_key": api_key} # dictionary
 
+response = requests.get(url, params=params) # send request
+
+print(response.status_code) #@ 200 means success
+
+#@ now request/response have reply and we have to look now
+# we will use json(word wall) here
+
+data = response.json()
+print(data)
+
+# now lets break it into pices  product.title,customer like
+
+title = data["title"]
+explanation = data["explanation"]
+image_url = data["url"]
+
+print("Title:", title)
+print("Explanation:", explanation)
+print("Image URL:", image_url)
 
 #& now lets convert them into functions
 
@@ -64,14 +85,18 @@ def get_asteroids():
     data = response.json()
     return data
 
-
+asteroid_data = get_asteroids()
+print(asteroid_data)
 
 
 #!   NOW ITS TIME TO SHOW ASTEROIDS (FROM get_asteroids)
 
 # data["near_earth_objects"] is itself a dictionary
 
-asteroid_data = get_asteroids()
+#&  looping through a dictionary's keys
+for day in asteroid_data["near_earth_objects"]:
+    print(day)
+
 
 #&  Now nesting a second loop to get each asteroid on that day
 def show_asteroids(data):
@@ -89,7 +114,6 @@ def show_asteroids(data):
             print(f"\n Name: {name}")
             print(f"\n Hazardous: {hazardous}")
             print(f"\n Diameter: {diameter}")
-            print("===================================")
 
 if asteroid_data:
     show_asteroids(asteroid_data)
