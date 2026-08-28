@@ -1,11 +1,16 @@
+#! detect asteroid incoming
+
 import requests
 from datetime import date, timedelta
 
 today = date.today()
-week_later = today + timedelta(days=7)
+def get_date_range():
+    today = date.today()
+    week_later = today + timedelta(days=7)
+    start_date = today.strftime("%Y-%m-%d")
+    end_date = week_later.strftime("%Y-%m-%d")
+    return start_date, end_date
 
-start_date = today.strftime("%Y-%m-%d") #@ %a day nasa api wouldnot accept
-end_date = week_later.strftime("%Y-%m-%d")
 
 def get_asteroids(api_key, start_date, end_date):
     url = "https://api.nasa.gov/neo/rest/v1/feed"

@@ -4,7 +4,7 @@ import os
 from apod import get_apod, show_apod
 from neows import get_asteroids, show_asteroids, get_date_range
 from donki import get_solar_flares
-from logger import log_apod, log_asteroids
+from logger import log_apod, log_asteroids, log_epic
 from epic import get_epic_images, show_epic_images
 
 load_dotenv()
@@ -33,11 +33,11 @@ while True:
             show_asteroids(asteroid_data)
             log_asteroids(asteroid_data)
 
-    elif choice == "30":
+    elif choice == "3":
         epic_data = get_epic_images(api_key)
         if epic_data:
             show_epic_images(epic_data)
-            log_epic_image(epic_data)        
+            log_epic(epic_data)        
 
     elif choice == "0":
         print("Goodbye!")
