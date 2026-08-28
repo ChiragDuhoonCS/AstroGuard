@@ -19,3 +19,14 @@ def log_asteroids(data):
                 name = asteroid["name"]
                 hazardous = asteroid["is_potentially_hazardous_asteroid"]
                 file.write(f"  {name} - Hazardous: {hazardous}\n")
+
+def log_epic(data):
+    with open(get_log_path(), "a") as file:
+        for item in data:
+            date_part = item["date"].split(" ")[0]
+            year, month, day = date_part.split("-")
+            image_name = item["image"]
+            image_url = f"https://epic.gsfc.nasa.gov/archive/natural/{year}/{month}/{day}/png/{image_name}.png"
+
+            file.write(f"\n[EPIC] {item['date']}\n")
+            file.write(f"Image URL: {image_url}\n")
