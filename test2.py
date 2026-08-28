@@ -1,5 +1,3 @@
-# see test2 to understand if missed out
-
 #@ to extract api key from .env  (to see and extract whats inside .env to other file)
 from dotenv import load_dotenv
 import os
@@ -35,6 +33,9 @@ def show_apod(data):
     print("Explanation:", data["explanation"])
     print("Image URL:", data["url"])
 
+apod_data = get_apod()
+if apod_data:
+    show_apod(apod_data)
 
 
 #! NeoWs  track asteriod   we need time   multiple asteroid on same day
@@ -90,10 +91,31 @@ def show_asteroids(data):
             print(f"\n Diameter: {diameter}")
             print("===================================")
 
+if asteroid_data:
+    show_asteroids(asteroid_data)
 
 
+#! SOLOR WEATHER
 
-#! SOLOR WEATHER   can ignore coz nasa server suck
+#@ CHECK
+def get_solar_flares():
+    url = "https://api.nasa.gov/DONKI/FLR"
+    params = {
+        "api_key": api_key,
+        "startDate": start_date,
+        "endDate": end_date
+    }
+    response = requests.get(url, params=params)
+
+    if response.status_code != 200:
+        print("Something went wrong:", response.status_code)
+        return None
+
+    data = response.json()
+    return data
+
+flare_data = get_solar_flares()
+print(flare_data)
 
 #& RETRY IF FAIL 503 SERVICE UNAVAILABLE
 import time
