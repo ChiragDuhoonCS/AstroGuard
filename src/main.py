@@ -15,6 +15,11 @@ import requests
 
 #& now lets convert them into functions
 
+#@ to show image
+def get_log_path():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(script_dir, "space_log.txt")
+
 
 #! APOD   DAILY PIC
 def get_apod():
@@ -118,6 +123,18 @@ def get_solar_flares():
     print("All attempts failed.")
     return None
 
+
+
+#@ converting url into image   from apod  we use log
+
+def log_apod(data):
+    with open(get_log_path(), "a") as file:
+        file.write(f"\n[APOD] {data['date']}\n")
+        file.write(f"Title: {data['title']}\n")
+        file.write(f"URL: {data['url']}\n") 
+
+
+#!  main menu
 while True:
     print("------ Daily Space Briefing -----")
     print("1. Today's Astronomy Picture")
@@ -130,6 +147,9 @@ while True:
         apod_data = get_apod()
         if apod_data:
             show_apod(apod_data)
+            log_apod(apod_data) 
+
+       
 
 
     elif choice == "2":
@@ -142,4 +162,7 @@ while True:
         break
     
     else:
-        print("Invalid choice, try again.")        
+        print("Invalid choice, try again.")  
+
+
+             
